@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 
+// optional fields have '?'
 interface Person {
   name: string,
-  age: number,
+  age?: number,
 }
 
 interface Props {
@@ -11,7 +12,12 @@ interface Props {
 }
 
 // const TextField: React.FC<{ text: string }> = () => {
-const TextField: React.FC<Props> = () => {
+const TextField: React.FC<Props> = ({
+  person,
+  text
+}) => {
+  const [count, setCount] = useState<number | null | undefined>(5);
+
   return (
     <div>
       <input type="text" />

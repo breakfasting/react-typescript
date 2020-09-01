@@ -6,7 +6,8 @@ import './App.css';
 const App: React.FC = () => {
   return (
     <div>
-      <TextField text="hello" person={{ name: 'Wayne', age: 28 }} />
+      {/* Alt + Esc for intellisense */}
+      <TextField text="hello" person={{ name: 'Wayne' }} />
     </div>
   );
 };
