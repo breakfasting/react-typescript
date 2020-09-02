@@ -7,7 +7,7 @@ const App: React.FC = () => {
   return (
     <div>
       {/* Alt + Esc for intellisense */}
-      <TextField text="hello" person={{ name: 'Wayne' }} />
+      <TextField text="hello" person={{ name: 'Wayne' }} handleChange={(e) => e.target.value} />
     </div>
   );
 };
