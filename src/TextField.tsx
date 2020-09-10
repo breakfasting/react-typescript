@@ -12,7 +12,6 @@ interface Props {
   handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void,
 }
 
-// const TextField: React.FC<{ text: string }> = () => {
 const TextField: React.FC<Props> = ({
   person,
   text,
